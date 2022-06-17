@@ -1,0 +1,14 @@
+﻿ex8L3
+
+
+ Exibir a soma dos números inteiros positivos do intervalo de um a cem 
+
+
+
+ int e = 1;
+            do
+            {
+                Console.WriteLine(e);
+                e += 2;
+
+            } while (e <= 100);

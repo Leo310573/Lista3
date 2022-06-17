@@ -1,0 +1,32 @@
+﻿ex6L3
+
+ Entrar via teclado com um valor (X) positivo, Travar a digitação, no sentido de aceitar
+somente valores positivos. Solicitar o intervalo que o programa que deverá calcular a tabuada
+do valor digitado, sendo que o segundo valor (B), deverá ser maior que o primeiro (A), caso
+contrário, digitar novamente somente o segundo. Após a validação dos dados, exibir a
+tabuada do valor digitado, no intervalo decrescente, ou seja, a tabuada de X no intervalo de B
+para A,
+
+
+ Console.WriteLine("Digite um número positivo");
+            int num = int.Parse(Console.ReadLine());
+
+            while (num < 0)
+            {
+                Console.WriteLine("Digite um número positivo");
+                num = int.Parse(Console.ReadLine());
+            }
+
+            Console.WriteLine("Digite o intervalo que o programa deverá calcular a tabuada do valor digitado");
+            int intervalo = int.Parse(Console.ReadLine());
+
+            while (intervalo < num)
+            {
+                Console.WriteLine("Digite o intervalo que o programa deverá calcular a tabuada do valor digitado");
+                intervalo = int.Parse(Console.ReadLine());
+            }
+
+            for (int i = intervalo; i >= num; i--)
+            {
+                Console.WriteLine($"{num} x {i} = {num * i}");
+            }

@@ -1,0 +1,30 @@
+﻿
+namespace ex2L3._1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Informe um número: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Informe um segundo número: ");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            if (num1 < num2)
+            {
+                Console.WriteLine("O segundo número é maior que o primeiro.");
+            }
+            else if (num1 == num2)
+            {
+                Console.WriteLine("Os números são iguais.");
+            }
+            else
+            {
+                Console.WriteLine("O primeiro número é maior que o segundo.");
+            }
+
+        }
+    }
+}

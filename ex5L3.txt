@@ -1,0 +1,21 @@
+﻿ex5L3
+
+entrar via teclado com um valor qualquer, travar a digitacao no sentido de aceitar apenas valores positivos,
+exibir a tabuada do numero digitado;
+
+ int num = 0;
+
+            Console.WriteLine("Digite um número");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            if (num >= 0)
+            {
+                for (int i = 1; i <= 10; i++)
+                {
+                    Console.WriteLine(num + "x" + i + "=" + (num * i));
+                }
+            }
+            else
+            {
+                Console.WriteLine("Número inválido");
+            }

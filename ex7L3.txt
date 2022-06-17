@@ -1,0 +1,22 @@
+﻿ex7L3
+
+Exibir a tabuada dos valores de um a vinte, no intervalo de um a dez. Entre as tabuadas,
+solicitar que o usuário pressione uma tecla
+
+
+
+
+            int resultado;
+
+            Console.Write("Digite um número de 1 a 20: ");
+            numero = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= 10; i++)
+            {
+                resultado = numero * i;
+                Console.WriteLine("{0} x {1} = {2}", numero, i, resultado);
+            }
+
+            Console.ReadKey();
+
+        }

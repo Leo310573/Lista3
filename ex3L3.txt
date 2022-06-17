@@ -1,0 +1,21 @@
+﻿
+ex3L3
+entrar via teclado com sexo de determinado usuario se "F" femenini ou "M" masculino
+
+
+ {
+                Console.WriteLine("Digite seu sexo (F ou M): ");
+                char sexo = char.Parse(Console.ReadLine().ToUpper());
+
+                if (sexo == 'F')
+                {
+                    Console.WriteLine("Você é do sexo Feminino");
+                }
+                else if (sexo == 'M')
+                {
+                    Console.WriteLine("Você é do sexo Masculino");
+                }
+                else
+                {
+                    Console.WriteLine("Sexo inválido");
+                }

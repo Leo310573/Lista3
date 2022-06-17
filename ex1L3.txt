@@ -1,0 +1,10 @@
+﻿exercicio 1 lista 3
+
+Console.Write("Digite um valor positivo: ");
+int valor = int.Parse(Console.ReadLine());
+
+while (valor <= 0)
+{
+    Console.Write("Digite um valor positivo: ");
+    valor = int.Parse(Console.ReadLine());
+}

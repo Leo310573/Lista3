@@ -1,0 +1,24 @@
+﻿ex13L3
+
+ Calcular o fatorial de um valor que será digitado. Este valor não poderá ser negativo. Enviar
+mensagem de erro e solicitar o valor novamente, se necessário. Perguntar se o usuário
+deseja ou não fazer um novo cálculo, consistir a resposta em “S” ou “N”.
+N! = N x N-1 x N-2 x N-3 x ....... x (N - (N-1))
+Ex: 5! = 5 x 4 x 3 x 2 x 1 = 120
+
+                do
+                {
+                    Console.Write("Digite um número: ");
+                    numero = Convert.ToInt32(Console.ReadLine());
+                } while (numero < 0);
+
+                int fatorial = numero;
+
+                for (int i = (numero - 1); i > 0; i--)
+                {
+                    fatorial *= i;
+                }
+                Console.WriteLine(fatorial);
+
+                Console.Write("Deseja fazer uma nova operação? (S/N): ");
+                resposta = Convert.ToChar(Console.ReadLine());

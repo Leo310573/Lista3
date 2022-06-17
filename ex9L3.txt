@@ -1,0 +1,24 @@
+﻿e9L10
+
+
+escrever os trinta primeiros numeros do metodo fibonaci 
+
+
+
+
+
+
+ 
+            int a = 1, b = 1, c = 0;
+
+            Console.WriteLine("Os primeiros 30 valores da série de Fibonacci são:");
+            Console.Write("{0}, {1}, ", a, b);
+
+            for (int i = 2; i < 30; i++)
+            {
+                c = a + b;
+                Console.Write("{0}, ", c);
+                a = b;
+                b = c;
+            }
+        
